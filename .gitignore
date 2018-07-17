@@ -105,7 +105,9 @@ ENV/
 
 # Experiments
 /preprocessing/figs/
-/data/
+/data/raw/
+/data/interim/
+/data/processed/
 /exp/
 logs/
 BACKUP/
