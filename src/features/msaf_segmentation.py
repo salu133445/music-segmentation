@@ -29,7 +29,7 @@ def get_synthesized_path(msd_id):
 
 def get_segmentation_path(msd_id):
     return op.join(synth_root, "segmentation",  msd_id[2], msd_id[3], msd_id[4], 
-            msd_id, id_dict[msd_id] + '.json')
+            msd_id, synth_id_dict[msd_id] + '.json')
 
 def segment_song(msd_id):
     boundaries, labels = msaf.process(get_synthesized_path(msd_id),
